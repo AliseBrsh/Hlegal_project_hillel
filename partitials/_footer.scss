@@ -1,0 +1,151 @@
+@import "../FontsColors/_fonts";
+@import "../FontsColors/_colors";
+
+.footer{
+
+    padding-bottom: 30px;
+
+    &__divider{ 
+        width: 100%;
+        margin: 0 auto;
+        height: 2px !important;
+        background-color: $separatorColor;
+        opacity: 1;
+    }
+
+
+    &__block{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__marker{
+        display: none;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $greytextColor;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 21px;
+
+        &__adress{
+            text-align: center;
+        }
+
+        &__button{
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+    &__adress{
+        @include MR1620;
+        color: #323264;
+    }
+
+    &__button{
+        @include bluebuttonstyle;
+        &:hover{
+            color: $activecolor;
+        }
+    }
+
+    &__social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+
+        &__icon{
+            display: inline-block;
+            width: 38px;
+            height: 38px;
+            background-image: url(../IMG/Footer/Vector.svg);
+
+            &:hover{
+                background-image: url(../IMG/Footer/Vectorhover.svg);
+            }
+        }
+
+        &__phone{
+            display: inline-block;
+            @include MB1620;
+            color: $footerphone;
+        }
+
+        &__email{
+            display: inline-block;
+            @include MB1620;
+            color: $activecolor;
+
+            &:hover{
+                color: $accentColor;
+            }
+        }
+    }
+
+    &__cw{
+
+        &__description{
+            @include MR1620;
+            color: $greytextColor;
+            text-align: center;
+        }
+    }
+}
+
+.tablet{
+    display: none;
+}
+
+@media (min-width:768px){
+
+    body{
+        min-width: 768px;
+    }
+
+    .tablet{
+        display: inline-block;
+    }
+
+    .footer{
+        
+        padding-bottom: 0px;
+
+        &__tabletcw{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__block{
+            display: inline-block;
+            width: 100%;
+        }
+
+        &__info{
+            flex-direction: row;
+        }
+
+        &__marker{
+            display: inline-block;
+        }
+
+        &__social{
+            flex-direction: row;
+        }
+
+        &__cw{
+            display: none;
+        }
+    }
+}
+

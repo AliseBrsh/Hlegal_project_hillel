@@ -1,0 +1,144 @@
+@import "../FontsColors/_fonts";
+@import "../FontsColors/_colors";
+
+
+.clients{
+
+    &__title{
+        @include MB1417;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $headerColor;
+        padding-bottom: 30px;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    &__grid{
+
+        &__desk{
+            display: none;
+        }
+    }
+
+    .item{
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 36px;
+        width: 100%;
+        height: 120px;
+    }
+
+    .hillel{
+        background-color: #1C4280;
+        background-image: url(../IMG/Clients/clientslogo/logo1.svg);
+    }
+
+    .wannabiz{
+        background-color: #143646;
+        background-image: url(../IMG/Clients/clientslogo/logo2.svg);
+    }
+
+    .tapgerine{
+        background-color: #F48B30;
+        background-image: url(../IMG/Clients/clientslogo/logo3.svg);
+    }
+
+    .look{
+        background-color: #9E4DC3;
+        background-image: url(../IMG/Clients/clientslogo/logo4.svg);
+    }
+
+    .orangear{
+        background-color: #FD9339;
+        background-image: url(../IMG/Clients/clientslogo/logo5.svg);
+    }
+
+    .adtelligent{
+        background-color: #E2E2E4;
+        background-image: url(../IMG/Clients/clientslogo/logo6.svg);
+    }
+}
+
+@media (min-width:768px) {
+
+    .clients{
+
+        &__grid{
+
+            &__mob{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+
+            &__desk{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+        }
+    }
+
+    .clikky{
+        background-color: #C71C36;
+        background-image: url(../IMG/Clients/clientslogo/logo7.svg);
+    }
+
+    .eco{
+        background-color: #DCF3F9;
+        background-image: url(../IMG/Clients/clientslogo/logo8.svg);
+    }
+
+    .infratek{
+        background-color: #EAEAEA;
+        background-image: url(../IMG/Clients/clientslogo/logo9.svg);
+    }
+
+    .citypark{
+        background-color: #282240;
+        background-image: url(../IMG/Clients/clientslogo/logo10.svg);
+    }
+
+    .artprint{
+        background-color: #1D4568;
+        background-image: url(../IMG/Clients/clientslogo/logo11.svg);
+    }
+
+    .ultimate{
+        background-color: #000000;
+        background-image: url(../IMG/Clients/clientslogo/logo12.svg);
+    }
+}
+
+@media (min-width:1440px) {
+    .clients{
+        padding-top: 30px;
+    }
+}
+
+@media (min-width:1920px) {
+
+    .clients{
+        padding-top: 30px;
+        padding-bottom: 60px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .hillel{
+        border-radius: 12px 0px 0px 0px;
+    }
+
+    .tapgerine{
+        border-radius: 0px 12px 0px 0px;
+    }
+
+    .citypark{
+        border-radius: 0px 0px 0px 12px;
+    }
+    .ultimate{
+        border-radius: 0px 0px 12px 0px;
+    }
+}
+

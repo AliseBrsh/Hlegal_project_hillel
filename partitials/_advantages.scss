@@ -1,0 +1,135 @@
+@import "../FontsColors/_fonts";
+@import "../FontsColors/_colors";
+
+.advwrapper{
+    padding: 0px 30px;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.adv{
+
+    &__title{
+
+        &__subtitle{
+
+            @include MB1417;
+            color: $activecolor;
+            cursor: pointer;
+            background-color: transparent;
+            position: relative;
+            padding-bottom: 10px;
+
+            &:hover{
+                color: $accentColor;
+                &::after{
+                    background-image: url(../IMG/Advantages/Vector2hover.svg);
+                }
+            }
+
+            &::after{
+                content: '';
+                display: inline-block;
+                background-image: url(../IMG/Advantages/Vector2.svg);
+                background-repeat: no-repeat;
+                width: 7px;
+                height: 12px;
+                background-position: center;
+                left: 105%;
+                top: 10%;
+                position: absolute;
+            }
+        }
+
+        &__maintitle{
+            @include MB3037;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__grid{
+        display: grid;
+        gap: 30px;
+        padding-bottom: 60px;
+    }
+
+}
+
+.card{
+    &__image{
+        padding-bottom: 30px;
+    }
+
+    &__title{
+        @include MB2227;
+        color: $activecolor;
+        padding-bottom: 15px;
+    }
+
+    &__description{
+        @include MR1626;
+        color: $whtext;
+    }
+}
+
+@media (min-width:768px) {
+
+    .advwrapper{
+        padding: 0px 60px
+    }
+
+    .adv{
+        &__grid{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 60px;
+        }
+
+        &__title{
+            &__maintitle{
+                @include MB3846;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    
+    .adv{
+        &__grid{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 60px;
+        }
+    }
+}
+
+@media (min-width:1440px) {
+
+    .advwrapper{
+        padding: 0px 60px
+    }
+
+    .adv{
+        &__grid{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 60px;
+        }
+    }
+}
+
+@media (min-width:1920px) {
+
+    .advwrapper{
+        padding: 0px 160px;
+        max-width: 1920px;
+    }
+}
+

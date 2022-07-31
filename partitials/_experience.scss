@@ -1,0 +1,221 @@
+@import "../FontsColors/_fonts";
+@import "../FontsColors/_colors";
+
+.experience{
+    margin-bottom: 30px;
+}
+
+.expwrapper{
+    max-width: 1600px;
+    padding: 0px 30px;
+    margin: 0 auto;
+}
+
+.exp{
+
+    &__mob{
+
+        &__list{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-y: scroll;
+            max-width: 768px;
+            padding-left: 30px;
+            justify-content: flex-start;
+            padding-bottom: 15px;
+        }
+
+        &__btn{
+            background-color: transparent;
+            width: max-content;
+            padding: 0px;
+            padding-right: 30px;
+        }
+    }
+
+    &__desk{
+        display: none;
+    }
+
+    &__subtitle{
+        @include MB2024;
+        color: $whtext;
+        padding-bottom: 30px;
+    }
+
+    &__description{
+        @include MR1930;
+        color: $whtext;
+    }
+}
+
+.nav-link{
+    @include MB3037;
+    color: $greytextColor;
+    &:hover{
+        color: $accentColor;
+    }
+}
+
+.nav-pills .nav-link.active{
+    @include MB3037;
+    background-color: transparent;
+    background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#exp__divider{
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 4px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.exp__mob__list::-webkit-scrollbar{
+    width: 0px;
+}
+
+@media (min-width:768px) {
+
+    body{
+        min-width: 768px; 
+    }
+
+    .expwrapper{
+        padding: 0px 60px;
+    }
+
+    .experience{
+        margin-bottom: 60px;
+    }
+
+    .exp{
+
+        &__mob{
+
+            &__list{
+                padding-left: 60px;
+                padding-bottom: 40px;
+                max-width: 100%;
+            }
+
+            &__btn{
+                background-color: transparent;
+                width: max-content;
+            }
+        }
+    
+        &__desk{
+            display: none;
+        }
+    
+        &__subtitle{
+            @include MB3037;
+        }
+    
+        &__description{
+            @include MR1930;
+            color: $whtext;
+        }
+    }
+    
+    #exp__divider{
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    .nav-link{
+        @include MB3846;
+    }
+
+    .nav-pills .nav-link.active{
+        @include MB3846;
+    }
+}
+
+@media (min-width:1024px) {
+
+    body{
+        min-width: 1024px; 
+    }
+
+    .exp__mob{
+        display: none;
+    }
+
+    .exp{
+
+        &__desk{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 60px;
+
+            &__btn{
+                text-align: end;
+
+                &__block{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    gap: 30px;
+                    flex: 1 0 auto;
+                    align-self: center;
+                }
+            }
+
+            &__title{
+                &__block{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    column-gap: 30px;
+                    flex: 1 1 auto;
+                    align-self: center;
+                }
+            }
+
+            &__divider{
+                &__block{
+                    align-self: center;
+                    flex: 0 0 auto;
+                }
+            }
+        }
+    }
+
+    #exp__desk__divider{
+        margin: 0px;
+        width: 4px;
+        height: 303px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
+
+@media (min-width:1440px) {
+    
+    body{
+        min-width: 1440px; 
+    }
+
+    .expwrapper{
+        max-width: 1440px;
+        padding: 0px 180px;
+    }
+}
+
+@media (min-width:1920px) {
+    
+    body{
+        min-width: 1920px; 
+    }
+
+    .expwrapper{
+        max-width: 1920px;
+        padding: 0px 280px;
+    }
+}

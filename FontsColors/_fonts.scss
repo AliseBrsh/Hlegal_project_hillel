@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(../Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@mixin MB1215 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;    
+}
+
+@mixin MR2024 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;    
+}
+
+@mixin MB2429 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;    
+}
+
+@mixin MB1620 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;    
+}
+
+@mixin MR1620 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;    
+}
+
+@mixin MB3846 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;    
+}
+
+@mixin MB3037 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+}
+
+@mixin MR1930 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+
+@mixin MB2024 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;    
+}
+
+@mixin MB1417 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@mixin MB2227 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;    
+}
+
+@mixin MR1626 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;    
+}
+
+@mixin subtitlestyle{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $activecolor;
+    align-self: center;
+}
+
+@mixin titlestyle{
+
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 30px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+}
+
+@mixin titlestyle3846{
+
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 30px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px; 
+}
+
+@mixin MR1422 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+@mixin bluebuttonstyle{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $activecolor;
+}
+
+

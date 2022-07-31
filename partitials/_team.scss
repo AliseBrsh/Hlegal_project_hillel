@@ -1,0 +1,236 @@
+@import "../FontsColors/_fonts";
+@import "../FontsColors/_colors";
+
+.bg__shadow{
+    width: calc(100% - 40px);
+    height: 10px;
+    background-color: $shadowColor;
+    margin: 0 auto;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.bg__shadow__little{
+    width: calc(100% - 80px);
+    height: 10px;
+    background-color: $lightShadowColor;
+    margin: 0 auto;
+    border-radius: 0px 0px 12px 12px;
+    margin-bottom: 30px;
+}
+
+.advwrapper{
+    padding: 0px 30px;
+    margin: 0 auto;
+    max-width: 1720px;
+}
+
+.team__list{
+    padding-bottom: 30px;
+}
+
+.flex{
+    &__block{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.card{
+    border: none;
+
+    &__img{
+
+        &__block1{
+            background-image: url(../IMG/Team/Team-1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 500px;
+            border-radius: 12px 12px 0px 0px;
+        }
+    }
+
+    &__content{
+        border-radius: 0px 0px 12px 12px;
+        padding: 30px;
+        background-color: $bggreyColor;
+    }
+
+    &__team{
+
+        &__subtitle{
+            @include subtitlestyle;
+            align-self: center;
+            background-color: transparent;
+            cursor: pointer;
+            position: relative;
+            padding-bottom: 5px;
+
+            &:hover{
+                color: $accentColor;
+                &::after{
+                    background-image: url(../IMG/Advantages/Vector2hover.svg);
+                }
+            }
+
+            &::after{
+                content: '';
+                display: inline-block;
+                background-image: url(../IMG/Advantages/Vector2.svg);
+                background-repeat: no-repeat;
+                width: 7px;
+                height: 12px;
+                background-position: center;
+                left: 105%;
+                top: 10%;
+                position: absolute;
+            }
+        }
+
+        &__title{
+            @include titlestyle;
+            padding-bottom: 30px;
+
+        }
+
+        &__name{
+            display: inline-block;
+            width: 100%;
+            @include MB1620;
+            color: $greytextColor;
+            padding-bottom: 6px;
+        }
+
+        &__position{
+            display: inline-block;
+            width: 100%;
+            @include MR1626;
+            color: $greytextColor;
+        }
+    }
+}
+
+.card{
+    border: none;
+
+    &__img{
+            
+        &__block2{
+            background-image: url(../IMG/Team/Team-2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 500px;
+            border-radius: 12px 12px 0px 0px;
+        }
+    }
+}
+
+.card{
+    border: none;
+
+    &__img{
+            
+        &__block3{
+            background-image: url(../IMG/Team/Team-3.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 500px;
+            border-radius: 12px 12px 0px 0px;
+        }
+    }
+}
+
+.slick-dots li {
+    margin: 0px;
+}
+
+.slick-dots li:not(:last-child) {
+    margin-right: 15px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: $activecolor;
+}
+
+.slick-dots li button:before {
+    font-size: 16px;
+    line-height: 22px;
+    width: 16px;
+    height: 16px;
+    opacity: 0.20;
+    color: $activecolor;
+
+    &:hover{
+        opacity: 0.20;
+        color: $activecolor;
+    }
+}
+
+@media (min-width:768px) {
+
+    .advwrapper{
+        padding: 0px 60px;
+    }
+
+    .card{
+
+        &__team{
+
+            &__title{
+                @include titlestyle3846;
+            }
+        }
+    }
+
+    .bg__shadow__little{
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .flex{
+        &__block{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .card{
+        &__img{
+            &__block1{
+                max-width: 400px;
+                height: inherit;
+                flex: 1 0 auto;
+                border-radius: 12px 0px 0px 12px;
+            }
+
+            &__block2{
+                max-width: 400px;
+                height: inherit;
+                flex: 1 0 auto;
+                border-radius: 12px 0px 0px 12px;
+            }
+
+            &__block3{
+                max-width: 400px;
+                height: inherit;
+                flex: 1 0 auto;
+                border-radius: 12px 0px 0px 12px;
+            }
+        }
+
+        &__content{
+            border-radius: 0px 12px 12px 0px;
+        }
+    }
+}
+
+
+
+
